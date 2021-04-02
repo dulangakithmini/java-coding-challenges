@@ -24,7 +24,7 @@ public class Main {
                     try {
                         double radius = scanner.nextDouble();
                         Circle circle = new Circle(radius);
-                        System.out.println("Area = " + circle.calculateArea(radius));
+                        System.out.println("Area = " + circle.calculateArea());
                         System.out.println("");
                         break;
                     } catch (Exception e) {
