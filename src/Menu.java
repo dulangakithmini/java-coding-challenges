@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public int menu() {
+    public int showMenu() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your choice: ");

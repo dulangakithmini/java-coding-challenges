@@ -8,7 +8,7 @@ public class Main {
 
         Menu menu = new Menu();
 
-        switch (menu.menu()) {
+        switch (menu.showMenu()) {
             case 1:
                 System.out.print("Enter the radius: ");
                 double radius = scanner.nextDouble();
