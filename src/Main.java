@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Area calculator");
+
         Menu menu = new Menu();
 
         switch (menu.menu()) {
