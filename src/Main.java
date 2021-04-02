@@ -12,8 +12,8 @@ public class Main {
             case 1:
                 System.out.print("Enter the radius: ");
                 double radius = scanner.nextDouble();
-                Area area = new Area(radius);
-                System.out.println("Area = " + area.calculateArea(radius));
+                Circle circle = new Circle(radius);
+                System.out.println("Area = " + circle.calculateArea(radius));
                 break;
 
             default:
