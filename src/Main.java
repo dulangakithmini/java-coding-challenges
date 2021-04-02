@@ -20,11 +20,17 @@ public class Main {
             switch (menu.showMenu()) {
                 case 1:
                     System.out.print("Enter the radius: ");
-                    double radius = scanner.nextDouble();
-                    Circle circle = new Circle(radius);
-                    System.out.println("Area = " + circle.calculateArea(radius));
-                    System.out.println("");
-                    break;
+
+                    try {
+                        double radius = scanner.nextDouble();
+                        Circle circle = new Circle(radius);
+                        System.out.println("Area = " + circle.calculateArea(radius));
+                        System.out.println("");
+                        break;
+                    } catch (Exception e) {
+                        System.out.println("Enter a valid number!");
+                        System.out.println("");
+                    }
 
                 default:
                     break;
