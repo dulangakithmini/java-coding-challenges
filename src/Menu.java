@@ -22,6 +22,5 @@ public class Menu {
         int choice = scanner.nextInt();
 
         return choice;
-
     }
 }

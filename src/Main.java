@@ -16,22 +16,27 @@ public class Main {
 
         Menu menu = new Menu(message, choiceList);
 
+        List<String> shapeList = new ArrayList<String>();
+        shapeList.add("calculate area of a circle");
+        shapeList.add("calculate area of a rectangle");
+        shapeList.add("quit");
+        Shape shape = new Shape(message, shapeList);
+
         while (true) {
             switch (menu.showMenu()) {
                 case 1:
-                    System.out.print("Enter the radius: ");
+                    switch (shape.showShapes()) {
+                        case 1:
+                            Circle circle = new Circle();
+                            break;
 
-                    try {
-                        double radius = scanner.nextDouble();
-                        Circle circle = new Circle(radius);
-                        System.out.println("Area = " + circle.calculateArea());
-                        System.out.println("");
-                        break;
-                    } catch (Exception e) {
-                        System.out.println("Enter a valid number!");
-                        System.out.println("");
+                        case 2:
+                            Rectangle rectangle = new Rectangle();
+                            break;
+
+                        default:
+                            break;
                     }
-
                 default:
                     break;
             }
