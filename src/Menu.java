@@ -22,7 +22,12 @@ public class Menu {
         while (true) {
             try {
                 int choice = scanner.nextInt() - 1;
-                return choice;
+                if (choice >= 0 && choice < choiceList.size()) {
+                    return choice;
+                } else {
+                    throw new Exception("Enter a valid choice!");
+                }
+
             } catch (Exception e) {
                 System.out.println("Enter a valid choice!\n");
             }
