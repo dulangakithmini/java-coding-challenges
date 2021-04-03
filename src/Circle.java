@@ -9,18 +9,13 @@ public class Circle extends Shape {
         System.out.print("Enter the radius: ");
 
         try {
-            radius = scanner.nextDouble();
-            Circle circle = new Circle(radius);
-            System.out.println("Area of the circle= " + circle.calculateArea());
+            this.radius = scanner.nextDouble();
+            System.out.println("Area of the circle= " + calculateArea());
             System.out.println("");
         } catch (Exception e) {
             System.out.println("Enter a valid number!");
             System.out.println("");
         }
-    }
-
-    public Circle(double radius) {
-        this.radius = radius;
     }
 
     @Override

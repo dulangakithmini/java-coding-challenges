@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
     public Rectangle() {
         System.out.print("Enter the height: ");
         try {
-            height = scanner.nextDouble();
+            this.height = scanner.nextDouble();
         } catch (Exception e) {
             System.out.println("Enter a valid number!");
             System.out.println("");
@@ -17,20 +17,14 @@ public class Rectangle extends Shape {
 
         System.out.print("Enter the width: ");
         try {
-            width = scanner.nextDouble();
+            this.width = scanner.nextDouble();
         } catch (Exception e) {
             System.out.println("Enter a valid number!");
             System.out.println("");
         }
 
-        Rectangle rectangle = new Rectangle(height, width);
-        System.out.println("Area of the rectangle= " + rectangle.calculateArea());
+        System.out.println("Area of the rectangle= " + calculateArea());
         System.out.println("");
-    }
-
-    public Rectangle(double height, double width) {
-        this.height = height;
-        this.width = width;
     }
 
     @Override
