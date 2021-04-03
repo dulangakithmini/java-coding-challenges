@@ -25,18 +25,8 @@ public class Main {
         while (true) {
             switch (menu.showMenu()) {
                 case 1:
-                    switch (shape.showShapes()) {
-                        case 1:
-                            Circle circle = new Circle();
-                            break;
-
-                        case 2:
-                            Rectangle rectangle = new Rectangle();
-                            break;
-
-                        default:
-                            break;
-                    }
+                    shape.calculateArea();
+                    break;
                 default:
                     break;
             }

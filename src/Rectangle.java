@@ -33,7 +33,9 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
+    @Override
     public double calculateArea() {
         return (this.height * this.width);
     }
+
 }

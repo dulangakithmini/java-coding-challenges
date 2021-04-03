@@ -28,4 +28,21 @@ public class Shape {
 
         return choice;
     }
+
+    public double calculateArea() {
+        switch (showShapes()) {
+            case 1:
+                Circle circle = new Circle();
+                break;
+
+            case 2:
+                Rectangle rectangle = new Rectangle();
+                break;
+
+            default:
+                break;
+        }
+
+        return -1;
+    }
 }
