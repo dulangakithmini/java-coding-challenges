@@ -5,11 +5,8 @@ public class Menu {
     private String message;
     private List<String> choiceList;
 
-    public void setMessage(String message) {
+    public Menu(String message, List<String> choiceList) {
         this.message = message;
-    }
-
-    public void setChoiceList(List<String> choiceList) {
         this.choiceList = choiceList;
     }
 

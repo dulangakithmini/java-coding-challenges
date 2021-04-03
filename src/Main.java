@@ -8,13 +8,13 @@ public class Main {
 
         System.out.println("Area calculator.");
 
-        Menu menu = new Menu();
-        menu.setMessage("Enter a choice");
+        String message = "Enter a choice: ";
 
         List<String> choiceList = new ArrayList<String>();
         choiceList.add("calculate area");
         choiceList.add("quit");
-        menu.setChoiceList(choiceList);
+
+        Menu menu = new Menu(message, choiceList);
 
         while (true) {
             switch (menu.showMenu()) {
