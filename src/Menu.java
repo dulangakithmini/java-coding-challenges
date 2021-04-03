@@ -2,8 +2,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
-    private String message;
-    private List<String> choiceList;
+    private final String message;
+    private final List<String> choiceList;
 
     public Menu(String message, List<String> choiceList) {
         this.message = message;
