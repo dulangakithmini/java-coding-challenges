@@ -19,8 +19,14 @@ public class Menu {
             System.out.println("Press " + (i + 1) + " to " + choiceList.get(i));
         }
 
-        int choice = scanner.nextInt();
+        while (true) {
+            try {
+                int choice = scanner.nextInt() - 1;
+                return choice;
+            } catch (Exception e) {
+                System.out.println("Enter a valid choice!\n");
+            }
+        }
 
-        return choice;
     }
 }
